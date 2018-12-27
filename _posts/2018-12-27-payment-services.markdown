@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "Starting with Jekyll!"
-date:   2018-12-19 14:09:00 +0000
-categories: jekyll update
+title:  "Payment Services"
+date:   2018-12-27 10:11:00 +0000
+categories: payment services Brazil Portugal
 ---
 
-I'm enthusiastic with Jekyll, i've like what i see and hope learn much more about that.
+How works payment services `Portugal` to `Brazil`
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Hello guys, melias here again to show you as works payment of company Portuguese to company Brazil. In last 3 months ago i have providing services of developer to company in Portugal, i would like show how that's works. Let's go:
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+`First step:` 
+You need make a invoice(a list of goods sent or services provided, with a statement of the sum due for these; a bill)
+`Secund step:` 
+You need send a IBAN number to company that providing services.
+`Third Step:`
+ You need change currency to local currency in my case was € Euro to R$ Real Brazil
