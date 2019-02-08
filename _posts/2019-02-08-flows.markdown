@@ -11,10 +11,6 @@ Let's starting with `Git-Flow`:
 
 ![Gitflow](https://i.imgur.com/6WaSbxb.png)
 
-<!-- <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ivKEj3ksPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
-
 It has two main branches to <b>master</b> and <b>develop</b>. A master branch always reflects production, it can be deployed to production at any time.
 Branch develop will always be the most updated to contain the latest changes, ready to merge with release and be tested before merge to master.
 There are 4 types of branch support <i>feature</i>, <i>bugfix</i>, <i>hotfix</i>, and <i>release</i>:<br>
@@ -46,3 +42,7 @@ This flow is dedicated to production branch, we have 3 main production, staging 
 `Conclusion`:<br>
 There is no better or worse flow, there is something that fits your need.<br> 
 cya ✌
+
+<!-- <div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ivKEj3ksPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
