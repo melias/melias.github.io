@@ -16,13 +16,13 @@ Branch develop will always be the most updated to contain the latest changes, re
 There are 4 types of branch support <i>feature</i>, <i>bugfix</i>, <i>hotfix</i>, and <i>release</i>:<br>
 <b>Feature</b>: New stuff and bug fixes that can wait until the release of the next release, makes direct merge with never ever develop directly with the master.<br>
 <b>Release</b>: created from develop is completely testable, can be merged with bugfix and then merge with the master, considering that all bugs have been fixed and tested. Being thus release will be ready to merge with master and develop, we mark with a tag the new version.<br>
-<b>Hotfix</b>: When something bad is discovered in production creates a branch from the master a hotfix, then the merge is corrected and again for master and for release, if you have some release in phase, test and release to develop soon after the tests, but if there is no release in progress the merge should be forwarded to develop. Perfect world would be no hotfix, as we will be covered by tests, but perfect world only in fairy tales 😁, if you are creating many hotfixes we have to review our tests in release.<br>
-<b>Bugfix</b>: in case found a bug testing a possible release, we've create a new branch to fix this bug and after we'll have to merge to release and develop, you can go back the test release branch.<br>
+<b>Hotfix</b>: When something bad is discovered in production creates a branch from the master a hotfix, then the merge is corrected and again for master and for release, if you have some release in phase, test and release to develop soon after the tests, but if there is no release in progress the merge should be forwarded to develop. The perfect world would be no hotfix, as we will be covered by tests, but the perfect world only in fairy tales 😁, if you are creating many hotfixes we have to review our tests in release.<br>
+<b>Bugfix</b>: in the case found a bug testing a possible release, we've create a new branch to fix this bug and after we'll have to merge to release and develop, you can go back the test release branch.<br>
 
 - master is my production code with the version tag.
-- Only hotfix and release merge with the master. (ideal only relase 😎).
+- Only hotfix and release merge with the master. (ideal only release 😎).
 - feature merge with develop.
-- bugfixes are merge to release and if necessary merge is done relase with the match to develop
+- bugfixes are merged to release and if necessary merge is done relase with the match to develop
 
 `GitHub-Flow`:
 
