@@ -2,7 +2,7 @@
 layout: post
 title:  "Payment Services"
 date:   2018-12-27 10:11:00 +0000
-categories: payment services Brazil Portugal
+categories: finance
 ---
 
 How works payment services `Portugal` to `Brazil`
