@@ -5,7 +5,7 @@ date:   2019-02-08 14:20:00 +0000
 categories: Dev Architecture Flows Git-Flow GitHub-Flow GitLab-Flow
 ---
 Hello guys, 
-I'm studenting some flows in this week to put in action here in the HHS, follows my analysis regarding the different standards of working with Git.
+I'm studying some flows in this week to put in action here in the HHS, follows my analysis regarding the different standards of working with Git.
 
 Let's starting with `Git-Flow`:
 
