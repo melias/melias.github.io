@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Many flows"
+date:   2019-02-08 14:20:00 +0000
+categories: Dev Architecture Flows Git-Flow GitHub-Flow GitLab-Flow
+---
+Hello guys, 
+I'm studenting some flows in this week to put in action here in the HHS, follows my analysis regarding the different standards of working with Git.
+
+Let's starting with `Git-Flow`:
+
+![Gitflow](https://i.imgur.com/6WaSbxb.png)
+
+<!-- <div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ivKEj3ksPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+It has two main branches to <b>master</b> and <b>develop</b>. A master branch always reflects production, it can be deployed to production at any time.
+Branch develop will always be the most updated to contain the latest changes, ready to merge with release and be tested before merge to master.
+There are 4 types of branch support <i>feature</i>, <i>bugfix</i>, <i>hotfix</i>, and <i>release</i>:<br>
+<b>Feature</b>: New stuff and bug fixes that can wait until the release of the next release, makes direct merge with never ever develop direct with the master.<br>
+<b>Release</b>: created from develop is completely testable, can be merge with bugfix and then merge with the master, considering that all bugs have been fixed and tested. Being thus release will be ready to merge with master and develop, we mark with a tag the new version.<br>
+<b>Hotfix</b>: When something bad is discovered in production creates a branch from the master a hotfix, then the merge is corrected and again for master and for release, if you have some release in phase, test and release to develop soon after the tests, but if there is no release in progress the merge should be forwarded to develop. Perfect world would be no hotfix, as we will be covered by tests, but perfect world only in fairy tales 😁, if you are creating many hotfixes we have to review our tests in release.<br>
+<b>Bugfix</b>: in case found a bug testing a possible release, we've create a new branch to fix this bug and after we'll have to merge to release and develop, you can go back the test release branch.<br>
+
+- master is my production code with the version tag.
+- Only hotfix and release merge with the master. (ideal only relase 😎).
+- feature merge with develop.
+- bugfixes are merge to release and if necessary merge is done relase with the match to develop
+
+`GitHub-Flow`:
+
+![Githubflow](https://i.imgur.com/DDr1Uu2.png)
+
+Flow simple and objective, which needs implementation frequently. A branch is made from the master both to fix bugs or implement new things. After completing one of the branches a <b>pull request</b> is made where it will be approved and tested before the merge is done for the master and sent the production.
+
+`GitLab-Flow`:
+
+![Gitlabflow](https://i.imgur.com/xL6FbIC.png)
+
+This flow is dedicated to production branch, we have 3 main production, staging and master lines.<br>
+<i>master</i> is the local development environment line.<br>
+<i>staging</i> test line before going into production, also known as pre-production.<br>
+<i>production</i> line that reflects production, when the merge of staging is done for production we mark with a tag and it is done deploy in the production environment.
+
+`Conclusion`:<br>
+There is no better or worse flow, there is something that fits your need.<br> 
+cya ✌
